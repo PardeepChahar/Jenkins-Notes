@@ -5,11 +5,11 @@ Job1: When developer commit code then jenkins fetch it and build it then deploy 
 3.	Run docker on other system
 4.	Enable remote(tcp) execution of docker commad on docker server
 5.	Add docker in cloud node on jenkins
-6.	Create job: 
-  a.	Take code from github
-  b.	Use webhook trigger
-  c.	Restrict job on docker server
-  d.	Define which image to be used for launching docker container
-  e.	Add maven command to be executed  
-  f.	Deoloy package on docker container itself
-  g.	Also enable artifact 
+6.	Create job(step 7-13):
+7.	Take code from github
+8.	Use webhook trigger																
+9.	Restrict job on docker server																
+10.	Define which image to be used for launching docker container																
+11.	Add maven command to be executed																
+12.	Deoloy package on docker container itself																
+13.	Also enable artifact 																
