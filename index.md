@@ -27,19 +27,18 @@ Lets start with setup
 4. Add docker in cloud node on jenkins
 ![image](https://user-images.githubusercontent.com/75135128/122684754-0128b500-d225-11eb-928c-e85357c01334.png)
 
-5. Create job **(step 6-12)** :
-6.	Take code from github
+5. Create job (step 6-12):
+6. Take code from github
 ![image](https://user-images.githubusercontent.com/75135128/122684809-611f5b80-d225-11eb-9ca8-3d6ca5a6ae62.png)
 
 7.  Use webhook trigger
 ![image](https://user-images.githubusercontent.com/75135128/122684837-8d3adc80-d225-11eb-9880-4da7f025c520.png)
 
-8.  Restrict job on docker server	
+8. Restrict job on docker server
 ![image](https://user-images.githubusercontent.com/75135128/122684849-9deb5280-d225-11eb-94be-cdb390db8e8b.png)
 
-9. Define which image to be used for launching docker container
-See image name given in step 4
-10.	Add maven command to be executed
+9. Define which image to be used for launching docker container(See image name given in step 4)
+10. Add maven command to be executed
 ![image](https://user-images.githubusercontent.com/75135128/122684910-f4f12780-d225-11eb-9d86-bda11afa81a7.png)
 
 11.	Deoloy package on docker container itself
@@ -50,13 +49,20 @@ See image name given in step 4
 
 
 Whenever any developer commit any change then jenkins start build
-Commit
 ![image](https://user-images.githubusercontent.com/75135128/122685323-34b90e80-d228-11eb-8006-ef160e033063.png)
+
 Build triggered
+
 ![image](https://user-images.githubusercontent.com/75135128/122685328-413d6700-d228-11eb-8c84-15dfb013744b.png)
+
 New container launched
+
 ![image](https://user-images.githubusercontent.com/75135128/122685342-574b2780-d228-11eb-844c-63af79280e46.png)
+
 Console output that shows user who trigger this build (here is github) and the system on which job is building 
+
 ![image](https://user-images.githubusercontent.com/75135128/122685375-8feb0100-d228-11eb-9e17-0e0b8a05e8e5.png)
+
 Final output of the build
+
 ![image](https://user-images.githubusercontent.com/75135128/122685468-29b2ae00-d229-11eb-8b61-97de124c840e.png)
