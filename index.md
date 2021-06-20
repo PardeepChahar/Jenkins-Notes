@@ -37,21 +37,21 @@ Lets start with setup
 8. Restrict job on docker server
 ![image](https://user-images.githubusercontent.com/75135128/122684849-9deb5280-d225-11eb-94be-cdb390db8e8b.png)
 
-9. Define which image to be used for launching docker container(See image name given in step 4)
-10. Add maven command to be executed
+9. Define which image to be used for launching docker container(Image name defined in step 4)
+10. Add maven command to build and pack the application
 ![image](https://user-images.githubusercontent.com/75135128/122684910-f4f12780-d225-11eb-9d86-bda11afa81a7.png)
 
 11.	Deoloy package on docker container itself
 ![image](https://user-images.githubusercontent.com/75135128/122684932-1baf5e00-d226-11eb-9c99-a6f2144ec7a0.png)
 
-12.	Also enable artifact
+12.	Enable artifact
 ![image](https://user-images.githubusercontent.com/75135128/122684940-2d910100-d226-11eb-914f-74492ac45677.png)
 
 
 Whenever any developer commit any change then jenkins start build
 ![image](https://user-images.githubusercontent.com/75135128/122685323-34b90e80-d228-11eb-8006-ef160e033063.png)
 
-Build triggered
+4th Build triggered
 
 ![image](https://user-images.githubusercontent.com/75135128/122685328-413d6700-d228-11eb-8c84-15dfb013744b.png)
 
@@ -59,10 +59,16 @@ New container launched
 
 ![image](https://user-images.githubusercontent.com/75135128/122685342-574b2780-d228-11eb-844c-63af79280e46.png)
 
-Console output that shows user who trigger this build (here is github) and the system on which job is building 
+Console output that shows user who trigger this build (here is github) and the system on which job is building is in progress 
 
 ![image](https://user-images.githubusercontent.com/75135128/122685375-8feb0100-d228-11eb-9e17-0e0b8a05e8e5.png)
 
 Final output of the build
 
 ![image](https://user-images.githubusercontent.com/75135128/122685468-29b2ae00-d229-11eb-8b61-97de124c840e.png)
+
+After completion of job docker container automatically stopped
+
+Using this setup you can dynamically launch conatiners and deploy your app on the top of these containers.
+
+                    ***
