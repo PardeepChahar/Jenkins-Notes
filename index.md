@@ -1,5 +1,8 @@
-Task 1
-Job1: When developer commit code then jenkins fetch it and build it then deploy on docker(dev-docker) constainer
+*********************************************Task 1, Job 1***********************************************
+Problem: When developer commit code then jenkins fetch it and build it then deploy on docker(dev-docker) constainer
+
+Solution:
+
 1.	Get public ip address for jenkins by using ngrok
 2.	Create a webhook on gitHub
 3.	Run docker on dev-docker system and also enable remote(tcp) execution of docker command from jenkins(make sure jenkins user added in docker group)
@@ -72,11 +75,13 @@ After completion of job docker container automatically stopped
 Using this setup you can dynamically launch conatiners and deploy your app on the top of these containers.
 
 *********************************************************************************************************
-*********************************************************************************************************
+
+*********************************************Task 1, Job 2***********************************************
 
 
-Task 1
-Job2: When developer commit and push the code then jenkins fetch it and build it, test it and package and deploy on docker(master-docker) constainer
+Problem: When developer commit and push the code then jenkins fetch it and build it, test it and package and deploy on docker(master-docker) constainer
+Solution:
+
 1.	Get public ip address for jenkins by using ngrok
 2.	Create a webhook on gitHub
 3.	Run docker on master-docker system and also enable remote(tcp) execution of docker command from jenkins(make sure jenkins user added in docker group)
@@ -138,7 +143,8 @@ Console output that shows user who trigger this build (here is github) and the s
 ![image](https://user-images.githubusercontent.com/75135128/122819545-3c47e880-d2f8-11eb-9325-60325777d6aa.png)
 
 
-Final output of the build
+Final output of the build:  
+
 Compile
 ![image](https://user-images.githubusercontent.com/75135128/122819975-bb3d2100-d2f8-11eb-8f1d-05588dd92286.png)
 
@@ -158,4 +164,7 @@ After completion of job docker container automatically stopped.
 
 Using this setup you can dynamically launch conatiners and deploy your app on the top of these containers.
 
+
 *********************************************************************************************************
+
+*********************************************Task 1, Job 3***********************************************
