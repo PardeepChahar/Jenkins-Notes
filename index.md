@@ -1,4 +1,6 @@
-*********************************************Task 1, Job 1***********************************************
+*********************************************************************************************************
+Task 1, Job 1
+
 Problem: When developer commit code then jenkins fetch it and build it then deploy on docker(dev-docker) constainer
 
 Solution:
@@ -76,8 +78,7 @@ Using this setup you can dynamically launch conatiners and deploy your app on th
 
 *********************************************************************************************************
 
-*********************************************Task 1, Job 2***********************************************
-
+Task 1, Job 2
 
 Problem: When developer commit and push the code then jenkins fetch it and build it, test it and package and deploy on docker(master-docker) constainer
 Solution:
@@ -166,5 +167,3 @@ Using this setup you can dynamically launch conatiners and deploy your app on th
 
 
 *********************************************************************************************************
-
-*********************************************Task 1, Job 3***********************************************
