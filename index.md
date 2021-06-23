@@ -167,3 +167,21 @@ Using this setup you can dynamically launch conatiners and deploy your app on th
 
 
 *********************************************************************************************************
+Task 1
+Job 3
+
+Launch container in docker
+![image](https://user-images.githubusercontent.com/75135128/123170573-4e608d00-d498-11eb-87c4-76cbe4840606.png)
+
+Install apache web server
+![image](https://user-images.githubusercontent.com/75135128/123170644-62a48a00-d498-11eb-9f63-c5c94f7f15d7.png)
+
+Systemctl start httpd failed then direct execute httpd using below command
+![image](https://user-images.githubusercontent.com/75135128/123170821-95e71900-d498-11eb-9712-18754d8f6d0a.png)
+
+Check with curl command from base os
+![image](https://user-images.githubusercontent.com/75135128/123170986-d050b600-d498-11eb-87cd-eb597981441d.png)
+
+QA find website working good then he trigger build
+
+
