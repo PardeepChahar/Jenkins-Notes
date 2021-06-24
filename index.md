@@ -170,6 +170,16 @@ Using this setup you can dynamically launch conatiners and deploy your app on th
 Task 1
 Job 3
 
+Problem:
+Manually QA team check the website running in docker constainer. If it is running fine then jenkins merge the dev branch into master/main branch and trigger job 2(next job)
+
+Solution:
+1. Launch an docker container
+2. Install and configure webserver in it
+3. Create a job on jenkins then merge dev to main branch
+
+Lets start with setup
+
 Launch container in docker
 ![image](https://user-images.githubusercontent.com/75135128/123170573-4e608d00-d498-11eb-87c4-76cbe4840606.png)
 
@@ -182,6 +192,38 @@ Systemctl start httpd failed then direct execute httpd using below command
 Check with curl command from base os
 ![image](https://user-images.githubusercontent.com/75135128/123170986-d050b600-d498-11eb-87cd-eb597981441d.png)
 
-QA find website working good then he trigger build
+Create job on jenkins
+
+Configure SCM
+![image](https://user-images.githubusercontent.com/75135128/123317993-567a0480-d54c-11eb-8366-3e29d62e3e07.png)
+
+Configure Merge before build: to merge dev branch into main
+![image](https://user-images.githubusercontent.com/75135128/123318093-77daf080-d54c-11eb-8f78-4697a264c96d.png)
+
+
+Configure Git Publisher: to push the changes to main branch on github
+![image](https://user-images.githubusercontent.com/75135128/123318440-d3a57980-d54c-11eb-88f8-2fafd85b7b46.png)
+
+QA find website working fine then they trigger build: 
+
+output-
+
+Pull code from github and merge into main(locally)
+![image](https://user-images.githubusercontent.com/75135128/123318777-3860d400-d54d-11eb-8793-bc8e7fdb56e0.png)
+
+
+After building the code push the changes to github
+![image](https://user-images.githubusercontent.com/75135128/123318938-647c5500-d54d-11eb-9647-a582da100dc6.png)
+
+
+**************************************************************************************************************************************************
+
+Learning from Task 1
+1. How to configure docker 
+2. How to create cloud node on jenkins
+3. How to build job on docker containers
+4. How to install and configure Webserver in docker container
+5. How to merge git branches from jenkins
+
 
 
