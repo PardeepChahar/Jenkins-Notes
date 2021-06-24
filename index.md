@@ -1,4 +1,7 @@
+This Task (Task 1) is given by Mr. Vimal Daga (LinuxWorld Informatics Pvt. Ltd.) for issuing the certificate for the Research Based Jenkins Traning
 *********************************************************************************************************
+
+
 Task 1, Job 1
 
 Problem: When developer commit code then jenkins fetch it and build it then deploy on docker(dev-docker) constainer
@@ -76,7 +79,9 @@ After completion of job docker container automatically stopped
 
 Using this setup you can dynamically launch conatiners and deploy your app on the top of these containers.
 
+
 *********************************************************************************************************
+
 
 Task 1, Job 2
 
@@ -167,6 +172,8 @@ Using this setup you can dynamically launch conatiners and deploy your app on th
 
 
 *********************************************************************************************************
+
+
 Task 1
 Job 3
 
@@ -176,7 +183,7 @@ Manually QA team check the website running in docker constainer. If it is runnin
 Solution:
 1. Launch an docker container
 2. Install and configure webserver in it
-3. Create a job on jenkins then merge dev to main branch
+3. Create a job on jenkins that merge dev branch into main branch
 
 Lets start with setup
 
@@ -186,10 +193,10 @@ Launch container in docker
 Install apache web server
 ![image](https://user-images.githubusercontent.com/75135128/123170644-62a48a00-d498-11eb-9f63-c5c94f7f15d7.png)
 
-Systemctl start httpd failed then direct execute httpd using below command
+"Systemctl start httpd" command failed then direct execute httpd using below command
 ![image](https://user-images.githubusercontent.com/75135128/123170821-95e71900-d498-11eb-9712-18754d8f6d0a.png)
 
-Check with curl command from base os
+Check the webserver with curl command from base os
 ![image](https://user-images.githubusercontent.com/75135128/123170986-d050b600-d498-11eb-87cd-eb597981441d.png)
 
 Create job on jenkins
@@ -197,11 +204,11 @@ Create job on jenkins
 Configure SCM
 ![image](https://user-images.githubusercontent.com/75135128/123317993-567a0480-d54c-11eb-8366-3e29d62e3e07.png)
 
-Configure Merge before build: to merge dev branch into main
+Configure Merge before build option: To merge dev branch into main branch
 ![image](https://user-images.githubusercontent.com/75135128/123318093-77daf080-d54c-11eb-8f78-4697a264c96d.png)
 
 
-Configure Git Publisher: to push the changes to main branch on github
+Configure Git Publisher option: To push the changes to main branch on github
 ![image](https://user-images.githubusercontent.com/75135128/123318440-d3a57980-d54c-11eb-88f8-2fafd85b7b46.png)
 
 QA find website working fine then they trigger build: 
@@ -218,12 +225,10 @@ After building the code push the changes to github
 
 **************************************************************************************************************************************************
 
+
 Learning from Task 1
 1. How to configure docker 
 2. How to create cloud node on jenkins
 3. How to build job on docker containers
 4. How to install and configure Webserver in docker container
-5. How to merge git branches from jenkins
-
-
-
+5. How to merge and then push git branches from jenkins
