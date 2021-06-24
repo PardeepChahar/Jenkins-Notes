@@ -1,4 +1,4 @@
-This Task (Task 1) is given by Mr. Vimal Daga (LinuxWorld Informatics Pvt. Ltd.) for issuing the certificate for the Research Based Jenkins Traning
+This Task (Task 1) is given by Mr. Vimal Daga (LinuxWorld Informatics Pvt. Ltd.) for issuing the certificate for the Research Based Jenkins Training
 
 
 
@@ -8,7 +8,7 @@ This Task (Task 1) is given by Mr. Vimal Daga (LinuxWorld Informatics Pvt. Ltd.)
 
 Task 1, Job 1
 
-Problem: When developer commit code then jenkins fetch it and build it then deploy on docker(dev-docker) constainer
+Problem: When developer commit code then Jenkins fetch it and build it then deploy on docker(dev-docker) container
 
 Solution:
 
@@ -22,7 +22,7 @@ Solution:
 8.  Restrict job on docker server
 9.	Define which image to be used for launching docker container
 10.	Add maven command to be executed
-11.	Deoloy package on docker container
+11.	Deploy package on docker container
 12.	Also enable artifact
 
 Lets start with setup
@@ -53,7 +53,7 @@ Lets start with setup
 10. Add maven command to build and package the application
 ![image](https://user-images.githubusercontent.com/75135128/122684910-f4f12780-d225-11eb-9d86-bda11afa81a7.png)
 
-11.	Deoloy package on docker container
+11.	Deploy package on docker container
 ![image](https://user-images.githubusercontent.com/75135128/122684932-1baf5e00-d226-11eb-9c99-a6f2144ec7a0.png)
 
 12.	Enable artifact
@@ -81,7 +81,7 @@ Final output of the build
 
 After completion of job docker container automatically stopped
 
-Using this setup you can dynamically launch conatiners and deploy your app on the top of these containers.
+Using this setup you can dynamically launch containers and deploy your app on the top of these containers.
 
 
 
@@ -91,7 +91,7 @@ Using this setup you can dynamically launch conatiners and deploy your app on th
 
 Task 1, Job 2
 
-Problem: When developer commit and push the code then jenkins fetch it and build it, test it and package and deploy on docker(master-docker) constainer
+Problem: When developer commit and push the code then jenkins fetch it and build it, test it and package and deploy on docker(master-docker) container
 Solution:
 
 1.	Get public ip address for jenkins by using ngrok
@@ -104,7 +104,7 @@ Solution:
 8.  Restrict job on docker server
 9.	Define which image to be used for launching docker container
 10.	Add maven command to be executed
-11.	Deoloy package on docker container itself
+11.	Deploy package on docker container itself
 12.	Also enable artifact
 
 Lets start with setup
@@ -135,7 +135,7 @@ Lets start with setup
 10. Add maven command to build and pack the application
 ![image](https://user-images.githubusercontent.com/75135128/122820911-ca709e80-d2f9-11eb-90ad-97861a287f0d.png)
 
-11.	Deoloy package on docker container itself
+11.	Deploy package on docker container itself
 ![image](https://user-images.githubusercontent.com/75135128/122820948-d9575100-d2f9-11eb-9072-244188bfe376.png)
 
 12.	Enable artifact
@@ -174,7 +174,7 @@ Build completed with Artifacts
 
 After completion of job docker container automatically stopped.
 
-Using this setup you can dynamically launch conatiners and deploy your app on the top of these containers.
+Using this setup you can dynamically launch containers and deploy your app on the top of these containers.
 
 
 
