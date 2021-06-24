@@ -1,5 +1,9 @@
 This Task (Task 1) is given by Mr. Vimal Daga (LinuxWorld Informatics Pvt. Ltd.) for issuing the certificate for the Research Based Jenkins Traning
+
+
+
 *********************************************************************************************************
+
 
 
 Task 1, Job 1
@@ -80,7 +84,9 @@ After completion of job docker container automatically stopped
 Using this setup you can dynamically launch conatiners and deploy your app on the top of these containers.
 
 
+
 *********************************************************************************************************
+
 
 
 Task 1, Job 2
@@ -171,11 +177,12 @@ After completion of job docker container automatically stopped.
 Using this setup you can dynamically launch conatiners and deploy your app on the top of these containers.
 
 
+
 *********************************************************************************************************
 
 
-Task 1
-Job 3
+
+Task 1, Job 3
 
 Problem:
 Manually QA team check the website running in docker constainer. If it is running fine then jenkins merge the dev branch into master/main branch and trigger job 2(next job)
@@ -223,7 +230,9 @@ After building the code push the changes to github
 ![image](https://user-images.githubusercontent.com/75135128/123318938-647c5500-d54d-11eb-9647-a582da100dc6.png)
 
 
+
 **************************************************************************************************************************************************
+
 
 
 Learning from Task 1
