@@ -6,11 +6,12 @@ This Task (Task 1) is given by Mr. Vimal Daga (LinuxWorld Informatics Pvt. Ltd.)
 
 
 
-Task 1, Job 1
+# Task 1, Job 1
 
-Problem: When developer commit code then Jenkins fetch it and build it then deploy on docker(dev-docker) container
+## Problem:
+When developer commit code then Jenkins fetch it and build it then deploy on docker(dev-docker) container
 
-Solution:
+## Solution:
 
 1.	Get public ip address for jenkins by using ngrok
 2.	Create a webhook on gitHub
@@ -25,7 +26,7 @@ Solution:
 11.	Deploy package on docker container
 12.	Also enable artifact
 
-Lets start with setup
+### Lets start with setup
 
 1. Get public ip address for jenkins by using ngrok
 ![image](https://user-images.githubusercontent.com/75135128/122684343-86f73100-d222-11eb-9252-11c40b2f4cf2.png)
@@ -89,10 +90,11 @@ Using this setup you can dynamically launch containers and deploy your app on th
 
 
 
-Task 1, Job 2
+# Task 1, Job 2
 
-Problem: When developer commit and push the code then jenkins fetch it and build it, test it and package and deploy on docker(master-docker) container
-Solution:
+## Problem:
+When developer commit and push the code then jenkins fetch it and build it, test it and package and deploy on docker(master-docker) container
+## Solution:
 
 1.	Get public ip address for jenkins by using ngrok
 2.	Create a webhook on gitHub
@@ -107,7 +109,7 @@ Solution:
 11.	Deploy package on docker container itself
 12.	Also enable artifact
 
-Lets start with setup
+### Lets start with setup
 
 1. Get public ip address for jenkins by using ngrok
 ![image](https://user-images.githubusercontent.com/75135128/122815579-44515980-d2f3-11eb-9e51-569c54be02f1.png)
@@ -182,17 +184,17 @@ Using this setup you can dynamically launch containers and deploy your app on th
 
 
 
-Task 1, Job 3
+# Task 1, Job 3
 
-Problem:
+## Problem:
 Manually QA team check the website running in docker constainer. If it is running fine then jenkins merge the dev branch into master/main branch and trigger job 2(next job)
 
-Solution:
+## Solution:
 1. Launch an docker container
 2. Install and configure webserver in it
 3. Create a job on jenkins that merge dev branch into main branch
 
-Lets start with setup
+### Lets start with setup
 
 Launch container in docker
 ![image](https://user-images.githubusercontent.com/75135128/123170573-4e608d00-d498-11eb-87c4-76cbe4840606.png)
@@ -235,9 +237,13 @@ After building the code push the changes to github
 
 
 
-Learning from Task 1
+## Learning from Task 1
 1. How to configure docker 
 2. How to create cloud node on jenkins
 3. How to build job on docker containers
 4. How to install and configure Webserver in docker container
 5. How to merge and then push git branches from jenkins
+
+**************************************************************************************************************************************************
+
+### You can see the implementation of [Task 2](https://pardeepchahar.github.io/Jenkins-Task-1)
